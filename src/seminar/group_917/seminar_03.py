@@ -3,6 +3,7 @@
 source: https://complex-systems-ai.com/en/algorithmic/corrected-exercises-time-complexity/
 """
 
+#n -- size of program input
 
 def f_1(n: int):
     for i in range(10):
@@ -157,6 +158,11 @@ def f_16(x, n: int):
     :param n:
     :return:
     """
+    m=f_16(x,n/2)
+    if n%2==0:
+        return n*n
+    else:
+        return n*n*x
     # TODO Implement me
     pass
 
